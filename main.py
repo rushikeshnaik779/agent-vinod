@@ -1,6 +1,10 @@
 from langchain_ollama.llms import OllamaLLM
 from langchain_core.prompts import ChatPromptTemplate 
 
+from gome import gome
+
+print(gome.add(1, 2))
+
 llm = OllamaLLM(model="gemma3:4b")
 
 template = """Questions : {question}
